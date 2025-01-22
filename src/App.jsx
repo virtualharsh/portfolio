@@ -151,6 +151,7 @@ const App = () => {
                             <h2 className="text-lg font-semibold">Harsh's Portfolio</h2>
                         </div>
                         <button 
+                        onClick={(e)=>window.close()}
                         className={`justify-self-end px-2 hover:bg-gray-700 duration-200 rounded-md ${theme}`}>
                                 <i className="ri-close-line text-2xl"></i>
                         </button>
