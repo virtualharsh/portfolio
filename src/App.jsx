@@ -163,7 +163,7 @@ const App = () => {
                 </div>
 
                 {/* Console Body */}
-                <div onClick={handleClick} className={`${theme} w-full flex-grow border-[1px] border-black rounded-b-lg rounded-tr-lg p-4`}>
+                <div onClick={handleClick} className={`${theme} overflow-auto w-full flex-grow border-[1px] border-black rounded-b-lg rounded-tr-lg p-4`}>
                     {/* Information */}
                     <div className='font-monoCursive font-semibold text-2xl'>
                         <h1>Hello World ! <br />
