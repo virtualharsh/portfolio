@@ -1,5 +1,6 @@
 import React, { useRef, useEffect, useState } from 'react'
 import { ifStartsWithCommand } from './scripts/MatchCommand';
+import 'remixicon/fonts/remixicon.css'
 
 
 const App = () => {
@@ -145,14 +146,13 @@ const App = () => {
                 <div className='flex items-center justify-between'>
                     {/* Console Title */}
                     <div className={`w-3/12 h-1/12 ${theme} duration-200 border-[1px] border-b-0 p-2 border-black flex justify-between items-center rounded-t-lg`}>
-                        <div className="flex items-center gap-3">
-                            <img className="w-12 rounded-2xl h-12" src="src/assets/my-notion-face-portrait.png" alt="Not found" />
-                            <h2 className="text-lg">Harsh's Portfolio</h2>
+                        <div className="flex items-center gap-x-4">
+                            <img className="w-12 rounded-2xl h-12" src="icon.png" alt="Not found" />
+                            <h2 className="text-lg font-semibold">Harsh's Portfolio</h2>
                         </div>
-                        <button className="flex justify-self-end">
-                            <img className="justify-self-end hover:bg-gray-200 duration-200" src="close-line.png" alt=""
-                                onClick={() => window.close()}
-                            />
+                        <button 
+                        className={`justify-self-end px-2 hover:bg-gray-700 duration-200 rounded-md ${theme}`}>
+                                <i className="ri-close-line text-2xl"></i>
                         </button>
                     </div>
                     {/* light button */}
