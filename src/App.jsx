@@ -9,7 +9,7 @@ export default function App() {
             <main className="min-h-screen w-full overflow-x-hidden bg-black px-4 pt-20 text-white md:px-28">
                 <Navbar />
                 <Hero />
-                <Contact />
+                {/* <Contact /> */}
             </main>
         </>
     );
