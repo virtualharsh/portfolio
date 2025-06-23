@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Crafty+Girls&family=Rancho&display=swap');
+
+@import "tailwindcss";
+
+
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+
+@theme {
+    --font-primary: "Rancho", "sans-serif";
+    --font-heading: "Crafty Girls", "sans-serif";
+    --font-navbar: "Chewy", "sans-serif";
+}
