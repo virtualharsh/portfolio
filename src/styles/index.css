@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Crafty+Girls&family=Rancho&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chewy&family=Crafty+Girls&family=Rancho&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap');
 
 @import "tailwindcss";
 
@@ -9,4 +9,5 @@
     --font-primary: "Rancho", "sans-serif";
     --font-heading: "Crafty Girls", "sans-serif";
     --font-navbar: "Chewy", "sans-serif";
+    --font-roboto : "Roboto Flex";
 }
