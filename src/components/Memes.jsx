@@ -4,7 +4,11 @@ const Memes = () => {
     const quotes = [
         {
             id: 1,
-            lines: ["// I don't always test my code...", "// the users does."],
+            lines: [
+                "// I don't always test my code...",
+                "// my assitants does.",
+                "// I call them users"
+            ],
         },
         {
             id: 2,
@@ -34,7 +38,7 @@ const Memes = () => {
     useEffect(() => {
         const interval = setInterval(() => {
             setCurrent((prev) => (prev + 1) % quotes.length);
-        }, 4000); // change every 4 seconds
+        }, 5000); // change every 4 seconds
         return () => clearInterval(interval);
     }, []);
 
@@ -46,7 +50,7 @@ const Memes = () => {
             <div className="clip-path-triangle absolute right-0 bottom-0 h-16 w-16 rotate-45 bg-yellow-400 opacity-40 blur-md"></div>
 
             {/* Main Meme Card */}
-            <div className="z-10 flex flex-col justify-center  h-[200px] w-[350px] transform rounded-xl border border-gray-700 bg-gradient-to-br from-[#111] to-[#222] p-6 font-mono text-sm text-white shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-[1.03] md:-rotate-2 md:hover:rotate-1">
+            <div className="z-10 flex h-[200px] w-[350px] transform flex-col justify-center rounded-xl border border-gray-700 bg-gradient-to-br from-[#111] to-[#222] p-6 font-mono text-sm text-white shadow-[0_20px_40px_rgba(0,0,0,0.3)] transition-transform duration-300 hover:scale-[1.03] md:-rotate-2 md:hover:rotate-1">
                 {quotes[current].lines.map((line, index) => (
                     <p key={index} className="leading-relaxed text-gray-200">
                         {line}
