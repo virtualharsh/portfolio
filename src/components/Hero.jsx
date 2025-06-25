@@ -21,7 +21,7 @@ const Hero = () => {
     }, []);
 
     return (
-        <section className="flex min-h-screen flex-col-reverse items-center justify-center gap-20 overflow-x-hidden pb-20 md:flex-row md:gap-60">
+        <section className="flex min-h-screen flex-col-reverse items-center justify-center gap-20 overflow-x-hidden pb-20 md:flex-row-reverse md:gap-72">
             <div className="flex flex-col items-center gap-4 md:max-w-xl md:items-start lg:max-w-2xl">
                 <h1 className="font-heading text-4xl font-bold tracking-wider md:text-6xl">
                     Harsh Sonegra
@@ -68,7 +68,7 @@ const Hero = () => {
 
             <div
                 className={`relative h-max w-full max-w-lg overflow-hidden rounded-2xl px-5 pt-20 pb-0 transition-all duration-[2500ms] ${
-                    isDay ? "bg-yellow-200" : "bg-[#0f172a]"
+                    isDay ? "bg-yellow-400" : "bg-[#0f172a]"
                 }`}
             >
                 {/* Sun or Moon */}
