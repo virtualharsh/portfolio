@@ -7,7 +7,7 @@ const Memes = () => {
             lines: [
                 "// I don't always test my code...",
                 "// my assitants does.",
-                "// I call them users"
+                "// I call them users",
             ],
         },
         {
@@ -23,6 +23,14 @@ const Memes = () => {
         },
         {
             id: 3,
+            lines: [
+                "If the computer knows:",
+                "I am missing a semicolon",
+                "Why won't it add it itself",
+            ],
+        },
+        {
+            id: 4,
             lines: [
                 "🔥 In case of fire:",
                 "",

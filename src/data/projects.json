@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Taskk - A note taking app",
+        "description": "A distraction free note taking app that allows you to manage your task effectively along with collaboration with your friends",
+        "tech": ["MongoDB", "Express", "React", "Node", "Shad/cn"],
+        "github": "https://github.com/virtualharsh/taskk",
+        "live": "https://taskk-1-16pw.onrender.com/",
+        "images": ["projects/task-home-dark.png", "projects/task-home-light.png","projects/task-dash-dark.png","projects/task-dash-light.png","projects/task-edit-dark.png","projects/task-settings-light.png"]
+    },
+    {
+        "title": "Medi-Stack Health Diagnosis Platform",
+        "description": "A smart medical tool integrating 4 ML models—brain tumor, diabetes, sepsis & depression detection—on a single MERN stack app.",
+        "tech": ["MongoDB", "Express", "React", "Node.js", "Flask"],
+        "github": "https://github.com/virtualharsh/Medi-Stack",
+        "live": "https://github.com/virtualharsh/Medi-Stack",
+        "images": ["/projects/dashboard.png", "/projects/sepsis.png","/projects/stress-1.png","/projects/stress-2.png"]
+    },
+    {
+        "title": "CodeShot",
+        "description": "Codeshot is a code to image/pdf converter that provide themes, fonts, backgrounds to make it look cool.",
+        "tech": ["React", "typescript", "HeroUI"],
+        "github": "https://github.com/virtualharsh/code-image",
+        "live": "https://codeshot-steel.vercel.app/",
+        "images": ["/projects/code-image-1.png", "/projects/code-image-2.png","/projects/code-image-3.png"]
+    }
+]
