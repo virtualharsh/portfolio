@@ -8,7 +8,7 @@
         "images": ["projects/task-home-dark.png", "projects/task-home-light.png","projects/task-dash-dark.png","projects/task-dash-light.png","projects/task-edit-dark.png","projects/task-settings-light.png"]
     },
     {
-        "title": "Medi-Stack Health Diagnosis Platform",
+        "title": "Medi-Stack Health Diagnosis Tool",
         "description": "A smart medical tool integrating 4 ML models—brain tumor, diabetes, sepsis & depression detection—on a single MERN stack app.",
         "tech": ["MongoDB", "Express", "React", "Node.js", "Flask"],
         "github": "https://github.com/virtualharsh/Medi-Stack",

@@ -34,7 +34,7 @@ const Projects = () => {
                                 key={idx}
                                 className={`relative mb-12 flex flex-col items-start gap-4 rounded-xl border border-white/20 bg-white/10 p-6 shadow-xl backdrop-blur-md transition-all lg:max-w-5/6 ${
                                     isRight
-                                        ? "text-right lg:ml-auto"
+                                        ? "lg:ml-auto"
                                         : "lg:mr-auto"
                                 }`}
                             >
