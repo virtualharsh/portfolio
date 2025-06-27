@@ -21,10 +21,9 @@ const Projects = () => {
                 </h2>
 
                 <div className="relative mx-auto w-full md:px-22">
-                    {/* Left line */}
-                    <div className="absolute top-0 left-0 hidden h-full w-0.5 bg-white/20 lg:block" />
-                    {/* Right line */}
-                    <div className="absolute top-0 right-0 hidden h-full w-0.5 bg-white/20 lg:block" />
+                    {/* Optional vertical lines for large screens */}
+                    <div className="absolute top-0 left-0 hidden h-full w-0.5 bg-white/30 lg:block" />
+                    <div className="absolute top-0 right-0 hidden h-full w-0.5 bg-white/30 lg:block" />
 
                     {projects.map((project, idx) => {
                         const isRight = idx % 2 === 1;
@@ -32,10 +31,8 @@ const Projects = () => {
                         return (
                             <div
                                 key={idx}
-                                className={`relative mb-12 flex flex-col items-start gap-4 rounded-xl border border-white/20 bg-white/10 p-6 shadow-xl backdrop-blur-md transition-all lg:max-w-5/6 ${
-                                    isRight
-                                        ? "lg:ml-auto"
-                                        : "lg:mr-auto"
+                                className={`relative mb-12 flex flex-col items-start gap-4 rounded-xl border border-white/10 bg-white/10 p-6 shadow-xl backdrop-blur-lg transition-all duration-300 hover:scale-[1.02] hover:shadow-[0_0_40px_rgba(255,255,255,0.1)] lg:max-w-5/6 ${
+                                    isRight ? "lg:ml-auto" : "lg:mr-auto"
                                 }`}
                             >
                                 {/* Top Row */}
@@ -49,7 +46,7 @@ const Projects = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                             title="GitHub"
-                                            className="hover:text-indigo-400"
+                                            className="transition-colors hover:text-indigo-400"
                                         >
                                             <i className="ri-github-line" />
                                         </a>
@@ -58,7 +55,7 @@ const Projects = () => {
                                             target="_blank"
                                             rel="noreferrer"
                                             title="Live Preview"
-                                            className="hover:text-green-400"
+                                            className="transition-colors hover:text-green-400"
                                         >
                                             <i className="ri-external-link-line" />
                                         </a>
@@ -67,7 +64,7 @@ const Projects = () => {
                                                 openPreview(project.images)
                                             }
                                             title="Image Preview"
-                                            className="hover:text-yellow-400"
+                                            className="transition-colors hover:text-yellow-400"
                                         >
                                             <i className="ri-eye-line" />
                                         </button>
@@ -75,7 +72,7 @@ const Projects = () => {
                                 </div>
 
                                 {/* Description */}
-                                <p className="text-sm text-gray-300">
+                                <p className="text-sm text-gray-200">
                                     {project.description}
                                 </p>
 
@@ -84,7 +81,7 @@ const Projects = () => {
                                     {project.tech.map((tech, i) => (
                                         <span
                                             key={i}
-                                            className="rounded-full bg-white/20 px-3 py-1 text-xs text-white backdrop-blur-md"
+                                            className="rounded-full border border-white/10 bg-white/10 px-3 py-1 text-xs text-white backdrop-blur-sm transition-all hover:bg-white/20"
                                         >
                                             {tech}
                                         </span>
@@ -96,7 +93,7 @@ const Projects = () => {
                 </div>
             </div>
 
-            {/* Conditionally render modal */}
+            {/* Image Modal */}
             {isModalOpen && (
                 <ProjectModal
                     images={activeImages}

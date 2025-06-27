@@ -22,5 +22,13 @@
         "github": "https://github.com/virtualharsh/code-image",
         "live": "https://codeshot-steel.vercel.app/",
         "images": ["/projects/code-image-1.png", "/projects/code-image-2.png","/projects/code-image-3.png"]
+    },
+    {
+        "title": "CLI Portfolio",
+        "description": "A terminal-style interactive portfolio built with React and Tailwind CSS.",
+        "tech": ["React", "tailwindcss"],
+        "github": "https://github.com/virtualharsh/harsh-cmd",
+        "live": "https://harsh-cmd.vercel.app/",
+        "images": ["/projects/cmd.png", "/projects/cmd-light.png"]
     }
 ]

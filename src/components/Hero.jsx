@@ -76,7 +76,7 @@ const Hero = () => {
                     <i
                         className={`${
                             isDay
-                                ? "ri-sun-fill text-black text-8xl"
+                                ? "ri-sun-fill text-8xl text-black"
                                 : "ri-moon-fill text-white"
                         }`}
                     ></i>
@@ -101,10 +101,8 @@ const Hero = () => {
 
                 {isDay && (
                     <div className="pointer-events-none absolute inset-0 z-0 text-5xl text-black opacity-60 transition-opacity duration-[2000ms]">
-                        
                         <div className="floatCloud ri-cloudy-line absolute top-20 right-10"></div>
                         <div className="floatCloud ri-cloudy-fill absolute top-18 right-15"></div>
-
 
                         <div className="floatCloud ri-cloudy-line absolute top-50 right-10"></div>
                         <div className="floatCloud ri-cloudy-fill absolute top-52 right-15"></div>
@@ -112,15 +110,11 @@ const Hero = () => {
                         <div className="floatCloud ri-cloud-fill absolute top-4 right-40"></div>
                         <div className="floatCloud ri-cloud-line absolute top-6 right-45"></div>
 
-
                         <div className="floatCloud ri-cloudy-line absolute top-30 left-5"></div>
-                        <div className="floatCloud ri-cloudy-fill absolute top-32  left-8"></div>
-
+                        <div className="floatCloud ri-cloudy-fill absolute top-32 left-8"></div>
 
                         <div className="floatCloud ri-cloudy-line absolute top-50 left-24"></div>
-                        <div className="floatCloud ri-cloudy-fill absolute top-52  left-22"></div>
-
-                        
+                        <div className="floatCloud ri-cloudy-fill absolute top-52 left-22"></div>
                     </div>
                 )}
 
