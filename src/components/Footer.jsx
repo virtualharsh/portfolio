@@ -20,13 +20,13 @@ const Footer = () => {
         <div className="w-full border-t border-white/10 bg-black/80 backdrop-blur-md">
             <footer className="flex w-full flex-col gap-6 p-6 md:flex-row-reverse md:justify-between md:px-52">
                 {/* Newsletter */}
-                <div className="">
+                <div className="flex flex-col space-y-4">
                     <p className="mb-3 text-base font-semibold text-white">
                         Subscribe to the newsletter
                     </p>
                     <form
                         onSubmit={handleSubscribe}
-                        className="flex max-w-md items-center gap-3 sm:flex-row"
+                        className="flex max-w-md items-center gap-4 sm:flex-row"
                     >
                         <input
                             type="email"

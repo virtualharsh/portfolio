@@ -37,6 +37,12 @@ const Hero = () => {
                         size="sm"
                         icon="ri-arrow-right-up-line"
                         className="w-max tracking-wide"
+                        onClick={() => {
+                            window.open(
+                                "https://drive.google.com/file/d/1qxxzYXGzaeSIqes77o4rpk9Usi073qid/view?usp=drive_link",
+                                "_blank",
+                            );
+                        }}
                     >
                         Resume
                     </Button>
@@ -45,6 +51,12 @@ const Hero = () => {
                         size="sm"
                         icon="ri-arrow-right-up-line"
                         className="w-max tracking-wide"
+                        onClick={() => {
+                            window.open(
+                                "https://github.com/virtualharsh",
+                                "_blank",
+                            );
+                        }}
                     >
                         Github
                     </Button>
