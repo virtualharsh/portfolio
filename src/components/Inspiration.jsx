@@ -1,3 +1,4 @@
+import Footer from "./Footer";
 export default function Inspiration() {
     const quotes = [
         {
@@ -61,80 +62,82 @@ export default function Inspiration() {
     ];
 
     return (
-        <div className="min-h-[100vh] mt-10 space-y-20 bg-black px-4 py-12 text-zinc-300">
-            {/* Quotes */}
-            <section>
-                <h2 className="mb-6 text-2xl md:text-4xl font-semibold">
-                    💬 Favorite Quotes
-                </h2>
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {quotes.map((quote, i) => (
-                        <div
-                            key={i}
-                            className="relative rounded-xl border border-zinc-700 bg-white/5 p-6 text-zinc-100 shadow-lg backdrop-blur-md transition-all duration-300"
-                        >
-                            <div className="text-5xl text-zinc-400">“</div>
-                            <p className="mt-2 text-lg italic">
-                                {" "}
-                                {quote.text} ”
-                            </p>
-                            <p className="mt-4 text-right text-sm text-zinc-400">
-                                – {quote.author}
-                            </p>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            {/* Spotify Playlists */}
-            <section>
-                <h2 className="mb-6 text-2xl md:text-4xl font-semibold">
-                    🎧 Favorite Playlists
-                </h2>
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {spotifyPlaylists.map((playlist, i) => (
-                        <div
-                            key={i}
-                            className="overflow-hidden rounded-xl border border-zinc-700 bg-zinc-900 shadow-lg transition-transform duration-300"
-                        >
-                            
-                            <iframe
-                                title={playlist.title}
-                                src={playlist.url}
-                                width="100%"
-                                height="352"
-                                allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
-                                loading="lazy"
-                            ></iframe>
-                        </div>
-                    ))}
-                </div>
-            </section>
-
-            {/* Books */}
-            <section>
-                <h2 className="mb-6 text-2xl md:text-4xl font-semibold">
-                    📚 Favorite Books
-                </h2>
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
-                    {books.map((book, i) => (
-                        <div
-                            key={i}
-                            className="relative flex items-start overflow-hidden rounded-lg border border-zinc-700 bg-zinc-900 shadow-lg transition-all duration-300"
-                        >
-                            <div className="h-full w-2 rounded-r-md bg-yellow-600 shadow-md" />
-                            <div className="p-4">
-                                <h3 className="text-lg font-semibold">
-                                    {book.title}
-                                </h3>
-                                <p className="mt-1 text-sm text-zinc-400">
-                                    by {book.author}
+        <>
+            <div className="mt-10 min-h-[100vh] space-y-20 bg-black px-6 py-12 text-zinc-300 md:px-36">
+                {/* Quotes */}
+                <section>
+                    <h2 className="mb-6 text-2xl font-semibold md:text-4xl">
+                        💬 I Find Life In These Quotes 💌
+                    </h2>
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        {quotes.map((quote, i) => (
+                            <div
+                                key={i}
+                                className="relative rounded-xl border border-zinc-700 bg-white/5 p-6 text-zinc-50 shadow-lg backdrop-blur-md transition-all duration-300"
+                            >
+                                <div className="text-5xl text-zinc-200">“</div>
+                                <p className="mt-1 text-lg italic">
+                                    {" "}
+                                    {quote.text} ”
+                                </p>
+                                <p className="absolute right-4 bottom-4 mt-4 text-right text-sm text-zinc-200">
+                                    – {quote.author}
                                 </p>
                             </div>
-                        </div>
-                    ))}
-                </div>
-            </section>
-        </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Spotify Playlists */}
+                <section>
+                    <h2 className="mb-6 text-2xl font-semibold md:text-4xl">
+                        I find life in these songs 🎧
+                    </h2>
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        {spotifyPlaylists.map((playlist, i) => (
+                            <div
+                                key={i}
+                                className="overflow-hidden rounded-xl border border-zinc-700 bg-zinc-900 shadow-lg transition-transform duration-300"
+                            >
+                                <iframe
+                                    title={playlist.title}
+                                    src={playlist.url}
+                                    width="100%"
+                                    height="352"
+                                    allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
+                                    loading="lazy"
+                                ></iframe>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+
+                {/* Books */}
+                <section>
+                    <h2 className="mb-6 text-2xl font-semibold md:text-4xl">
+                        📚 Books
+                    </h2>
+                    <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+                        {books.map((book, i) => (
+                            <div
+                                key={i}
+                                className="relative flex items-start overflow-hidden rounded-lg border border-zinc-700 bg-zinc-900 shadow-lg transition-all duration-300"
+                            >
+                                <div className="h-full w-2 rounded-r-md bg-yellow-600 shadow-md" />
+                                <div className="p-4">
+                                    <h3 className="text-lg font-semibold">
+                                        {book.title}
+                                    </h3>
+                                    <p className="mt-1 text-sm text-zinc-400">
+                                        by {book.author}
+                                    </p>
+                                </div>
+                            </div>
+                        ))}
+                    </div>
+                </section>
+            </div>
+            <Footer />
+        </>
     );
 }

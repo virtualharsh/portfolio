@@ -18,7 +18,7 @@ const Footer = () => {
 
     return (
         <div className="w-full border-t border-white/10 bg-black/80 backdrop-blur-md">
-            <footer className="flex w-full flex-col gap-6 p-6 md:flex-row-reverse md:justify-between md:px-52">
+            <footer className="flex w-full flex-col gap-6 p-6 md:flex-row-reverse md:justify-between md:px-40">
                 {/* Newsletter */}
                 <div className="flex flex-col space-y-4">
                     <p className="mb-3 text-base font-semibold text-white">
