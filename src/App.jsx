@@ -5,14 +5,15 @@ import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import Inspiration from "./components/Inspiration";
-
+import { Toaster, toast } from "sonner";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-
 
 export default function App() {
     return (
         <Router>
             <Navbar />
+            <Toaster position="top-center" richColors />
+
             <main className="min-h-screen w-full overflow-x-hidden bg-black px-4 pt-20 text-white md:px-52">
                 <Routes>
                     <Route

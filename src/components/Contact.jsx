@@ -4,12 +4,10 @@ const Contact = () => {
     return (
         <section
             id="contact"
-            className="relative bg-black px-6 py-20 text-white overflow-hidden"
+            className="relative overflow-hidden bg-black px-6 py-20 pt-10 text-white"
         >
             {/* Parallax Background Using Tailwind v4 Arbitrary Values */}
-            <div
-                className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.2),transparent_30%),radial-gradient(circle_at_80%_80%,rgba(236,72,153,0.2),transparent_30%)] bg-[length:400%_400%] animate-[parallax_30s_linear_infinite]"
-            />
+            <div className="absolute inset-0 -z-10 animate-[parallax_30s_linear_infinite] bg-[radial-gradient(circle_at_20%_20%,rgba(99,102,241,0.2),transparent_30%),radial-gradient(circle_at_80%_80%,rgba(236,72,153,0.2),transparent_30%)] bg-[length:400%_400%]" />
 
             {/* Keyframe via Tailwind v4 arbitrary animation */}
             <style>

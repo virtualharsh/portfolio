@@ -46,7 +46,7 @@ const Hero = () => {
                         icon="ri-arrow-right-up-line"
                         className="w-max tracking-wide"
                     >
-                        Linkedin
+                        Github
                     </Button>
                 </div>
             </div>

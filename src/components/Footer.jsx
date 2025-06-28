@@ -1,42 +1,77 @@
-import { div } from 'motion/react-client';
-import React from 'react'
+import { div } from "motion/react-client";
+import React, { useState } from "react";
+import { toast } from "sonner";
+import socials from "../data/socials.json"
+const Footer = () => {
+    const [email, setEmail] = useState("");
+    const handleSubscribe = (e) => {
+        e.preventDefault();
 
-const Footer = () =>{
+        if (!email) return;
+
+        // Show toast
+        toast.success("Thank you for subscribing! 🎉");
+
+        // Clear the input
+        setEmail("");
+    };
+
     return (
-        <div>
-            {/* Footer */}
-            <footer className="mt-10 border-t border-white/10 bg-black/80 py-6 text-center text-sm text-gray-400 backdrop-blur-md">
-                <p className='text-lg'>
-                    &copy; {new Date().getFullYear()} Harsh Sonegra. All rights
-                    reserved.
-                </p>
-                <div className="mt-2 flex justify-center gap-4 text-xl">
-                    <a
-                        href="https://www.linkedin.com/in/harshsonegra/"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="transition-colors hover:text-white"
+        <div className="w-full border-t border-white/10 bg-black/80 backdrop-blur-md">
+            <footer className="flex w-full flex-col gap-6 p-6 md:flex-row-reverse md:justify-between md:px-52">
+                {/* Newsletter */}
+                <div className="">
+                    <p className="mb-3 text-base font-semibold text-white">
+                        Subscribe to the newsletter
+                    </p>
+                    <form
+                        onSubmit={handleSubscribe}
+                        className="flex max-w-md items-center gap-3 sm:flex-row"
                     >
-                        <i className="ri-linkedin-fill" />
-                    </a>
-                    <a
-                        href="mailto:harshsonegrahere@gmail.com"
-                        className="transition-colors hover:text-white"
-                    >
-                        <i className="ri-mail-line" />
-                    </a>
-                    <a
-                        href="https://x.com/ayyhaay_harsh"
-                        target="_blank"
-                        rel="noreferrer"
-                        className="transition-colors hover:text-white"
-                    >
-                        <i className="ri-twitter-x-line" />
-                    </a>
+                        <input
+                            type="email"
+                            required
+                            value={email}
+                            onChange={(e) => setEmail(e.target.value)}
+                            placeholder="Enter your email"
+                            className="w-2/3 flex-1 rounded-xl border border-white/10 bg-white/10 px-4 py-2 text-white placeholder:text-gray-400 focus:ring-2 focus:ring-white/30 focus:outline-none"
+                        />
+                        <button
+                            type="submit"
+                            className="rounded-xl bg-white px-6 py-2 font-semibold text-black transition-colors hover:bg-gray-300"
+                        >
+                            Subscribe
+                        </button>
+                    </form>
+                </div>
+
+                {/* Contact Info */}
+                <div className="space-y-4 text-zinc-400">
+                    <p className="text-lg text-zinc-300">
+                        &copy; {new Date().getFullYear()} Harsh Sonegra. All
+                        rights reserved.
+                    </p>
+                    <ul className="space-y-2 text-base">
+                        {socials.map((contact, index) => (
+                            <li
+                                key={index}
+                                className="flex items-center gap-2 transition-colors hover:text-white"
+                            >
+                                <i className={`${contact.icon} text-xl`} />
+                                <a
+                                    href={contact.href}
+                                    target="_blank"
+                                    rel="noreferrer"
+                                >
+                                    {contact.label}
+                                </a>
+                            </li>
+                        ))}
+                    </ul>
                 </div>
             </footer>
         </div>
     );
-}
+};
 
 export default Footer;

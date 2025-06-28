@@ -17,6 +17,7 @@
         "react-router-dom": "^7.6.2",
         "react-swipeable": "^7.0.2",
         "remixicon": "^4.6.0",
+        "sonner": "^2.0.5",
         "tailwindcss": "^4.1.10"
     },
     "devDependencies": {

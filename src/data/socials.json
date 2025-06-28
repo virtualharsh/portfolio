@@ -1,0 +1,27 @@
+[
+    {
+        "label": "GitHub/virtualharsh",
+        "icon": "ri-github-fill",
+        "href": "https://github.com/virtualharsh"
+    },
+    {
+        "label": "Medium/harshsonegra",
+        "icon": "ri-medium-fill",
+        "href": "https://harshsonegra.medium.com"
+    },
+    {
+        "label": "LinkedIn/harshsonegra",
+        "icon": "ri-linkedin-fill",
+        "href": "https://www.linkedin.com/in/harshsonegra/"
+    },
+    {
+        "label": "harshsonegrahere@gmail.com",
+        "icon": "ri-mail-line",
+        "href": "mailto:harshsonegrahere@gmail.com"
+    },
+    {
+        "label": "Twitter / ayyhaay_harsh",
+        "icon": "ri-twitter-x-line",
+        "href": "https://x.com/ayyhaay_harsh"
+    }
+]
