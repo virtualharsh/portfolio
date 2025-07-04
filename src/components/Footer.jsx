@@ -1,9 +1,10 @@
-import { div } from "motion/react-client";
 import React, { useState } from "react";
 import { toast } from "sonner";
 import socials from "../data/socials.json"
+import { useNavigate } from "react-router-dom";
 const Footer = () => {
     const [email, setEmail] = useState("");
+    const navigate = useNavigate();
     const handleSubscribe = (e) => {
         e.preventDefault();
 
@@ -43,6 +44,19 @@ const Footer = () => {
                             Subscribe
                         </button>
                     </form>
+
+                    <div
+                        className="cursor-pointer rounded-xl bg-zinc-800 p-2 text-zinc-50"
+                        onClick={() => navigate("/inspiration")}
+                    >
+                        <p className="text-center">
+                            Have a look at {" "}
+                            <span className="bg-gradient-to-r from-yellow-400 via-pink-500 to-purple-600 bg-clip-text font-semibold text-transparent underline underline-offset-2">
+                                Inspiration
+                            </span>{" "}
+                            ✨
+                        </p>
+                    </div>
                 </div>
 
                 {/* Contact Info */}

@@ -106,6 +106,7 @@ export default function Inspiration() {
                                     height="352"
                                     allow="autoplay; clipboard-write; encrypted-media; picture-in-picture"
                                     loading="lazy"
+                                    
                                 ></iframe>
                             </div>
                         ))}

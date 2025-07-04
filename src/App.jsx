@@ -7,10 +7,14 @@ import Navbar from "./components/Navbar";
 import Inspiration from "./components/Inspiration";
 import { Toaster, toast } from "sonner";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import ScrollToTop from "./components/ScrollToTop";
+
 
 export default function App() {
     return (
         <Router>
+            <ScrollToTop />
+
             <Navbar />
             <Toaster position="top-center" richColors />
 

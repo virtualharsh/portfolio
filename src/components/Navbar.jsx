@@ -83,6 +83,11 @@ const Navbar = () => {
                                 className="hover:text-yellow-400"
                             >
                                 {item.name}
+                                {item.name === "Inspiration" && (
+                                    <span className="animate-bounce rounded-full ml-2 bg-amber-600 px-2 py-0.5 text-xs font-semibold text-white">
+                                        NEW
+                                    </span>
+                                )}
                             </button>
                         </li>
                     ))}
@@ -96,9 +101,17 @@ const Navbar = () => {
                         <li key={item.name}>
                             <button
                                 onClick={() => handleNavClick(item)}
-                                className="hover:text-yellow-400 cursor-pointer"
+                                className="cursor-pointer hover:text-yellow-400"
                             >
-                                {item.name}
+                                <span
+                                    className={`${
+                                        item.name === "Inspiration"
+                                            ? "bg-gradient-to-r from-yellow-400 text-3xl underline underline-offset-2 via-pink-500 to-purple-600 bg-clip-text font-semibold text-transparent"
+                                            : ""
+                                    }`}
+                                >
+                                    {item.name}
+                                </span>
                             </button>
                         </li>
                     ))}
