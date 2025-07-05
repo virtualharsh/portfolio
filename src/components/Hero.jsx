@@ -11,6 +11,9 @@ const Hero = () => {
         return () => clearInterval(interval);
     }, []);
 
+    const RESUME_LINK = import.meta.env.VITE_RESUME;    
+
+
     // Inside the Hero component
     const clouds = useMemo(() => {
         return Array.from({ length: 5 }).map(() => ({
@@ -38,10 +41,7 @@ const Hero = () => {
                         icon="ri-arrow-right-up-line"
                         className="w-max tracking-wide"
                         onClick={() => {
-                            window.open(
-                                "https://drive.google.com/file/d/1qxxzYXGzaeSIqes77o4rpk9Usi073qid/view?usp=drive_link",
-                                "_blank",
-                            );
+                            window.open(RESUME_LINK, "_blank");
                         }}
                     >
                         Resume
